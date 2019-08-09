@@ -58,10 +58,6 @@ table {
 }
 /*RESET ABOVE*/
 
-div{
-    /* box-sizing: border-box; */
-    /* border:1px solid purple; */
-}
 /*NAV*/
 #navbar{
     display:flex;
@@ -102,10 +98,7 @@ h2{
     display:flex;
     justify-content: center;
 }
-.Top{
-    /* border:1px solid purple; */
-    /* padding:20px 0; */
-}
+
 .Middle{
     display:flex;
 }
@@ -122,11 +115,14 @@ h2{
     display:flex;
     flex-direction:column;
 }
+
+/*BUTTONs*/
 button{
     background-color:rgb(149, 157, 86);
     cursor: pointer;
     outline:none;
     color:black;
+    font-weight:bold;
     border:none;
     border-radius:5px;
     width:150px;
@@ -135,18 +131,13 @@ button{
 button:hover{
     background-color:black;
     color:rgb(149, 157, 86);
+    font-weight:bold;
 }
 button:active{
     background-color:black;
     box-shadow:0 5px rgb(149, 157, 86);
     transform: translateY(4px);
 }
-
-
-
-
-
-
 
 /*FOOTER*/
 footer{
