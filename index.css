@@ -88,17 +88,18 @@ h2, p{
 h2{
     color:black;
 }
-/* .main-IMG{
-    width:100%;
-    height:auto;
-    THIS PUTS IN A HORIZONTAL SCROLL BAR!!!
-} */
+
 h2{
     background-color:rgb(149, 157, 86);
     display:flex;
     justify-content: center;
 }
-
+.main-IMG{
+    border:1px solid red;
+    /* max-width:100%; */
+    /* height:auto; */
+    /*THIS PUTS IN A HORIZONTAL SCROLL BAR!!!*/
+}
 .Middle{
     display:flex;
 }
