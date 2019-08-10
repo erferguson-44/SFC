@@ -59,22 +59,63 @@ table {
 /*RESET ABOVE*/
 
 /*NAV*/
-#navbar{
+.navbar{
     display:flex;
     justify-content: space-around;
     padding:10px;
     background-color:rgb(149, 157, 86);
     font-family: 'Myriad Pro', Myriad, helvetica, arial, sans-serif;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    width:94%;
 }
-#navbar a{
+.navbar a{
     text-decoration: none;
     color:black;
+    /* float:left;
+    display:block;
+    text-align:center;
+    padding:14px 16px; */
 }
+/*credit for nav bar animations: EvyatarDa(C)*/
+div.navbar a{
+    color: black;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer; 
+}
+div.brackets a:before, div.brackets a:after{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+div.brackets a:before{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+div.brackets a:after{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+div.brackets a:hover:before, div.brackets a:hover:after{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 /*LOGO SECTION*/
 .SFC-logo{
     display:flex;
     justify-content: center;
-    padding:15px 0;
+    padding-top:60px;
 }
 /*BODY-MAIN SECTION*/
 main{
@@ -86,19 +127,22 @@ h2, p{
     padding:5px;
 }
 h2{
-    color:black;
-}
-
-h2{
     background-color:rgb(149, 157, 86);
     display:flex;
     justify-content: center;
+    color:black;
 }
-.main-IMG{
+
+.img-box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
     border:1px solid red;
-    /* max-width:100%; */
-    /* height:auto; */
-    /*THIS PUTS IN A HORIZONTAL SCROLL BAR!!!*/
+}
+.img-box img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
 }
 .Middle{
     display:flex;
